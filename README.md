@@ -5,5 +5,6 @@
 * design_patterns
     * Creational Patterns
     * Structural Patterns
+        * Decorators
     * Behavioral Patterns
         * Strategy
