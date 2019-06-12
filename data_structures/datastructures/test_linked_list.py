@@ -1,6 +1,6 @@
 import pytest
 
-from datastructures import LinkedList
+from linked_list import LinkedList
 
 
 def test_insert():
@@ -13,6 +13,7 @@ def test_insert():
     assert linked_list.head.next.item is None
     assert linked_list.tail.item is a
     linked_list.insert(b)
+    print(linked_list)
     assert linked_list.head.item is b
     assert linked_list.head.next.item is a
     assert linked_list.tail.item is a
@@ -81,3 +82,5 @@ def test_iterate():
     for i in linked_list:
         j += 1
         assert i == 'abc'[::-1][j]
+
+test_insert()
