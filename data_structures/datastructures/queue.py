@@ -1,4 +1,4 @@
-from double_linked_list import DoublyLinkedList
+from doubly_linked_list import DoublyLinkedList
 
 class QueueEmptyError(Exception):
     pass
@@ -25,7 +25,7 @@ class ArrayBasedQueue(BaseQueue):
     def __init__(self, size=10000):
         self._container = [None] * size
         self._first = None
-        slef._last = None
+        self._last = None
 
     @property
     def head(self):
@@ -37,7 +37,7 @@ class ArrayBasedQueue(BaseQueue):
     def tail(self):
         if self._first is None or self._first > self._last:
             return None
-        return self._container[self._first]
+        return self._container[self._last]
 
     def enqueue(self, item):
         if self._first is None:

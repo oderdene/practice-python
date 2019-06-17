@@ -83,3 +83,10 @@ def test_linked_list_implementation_empty_queue():
     queue = Queue(implementation='doubly_linked_list')
     with pytest.raises(QueueEmptyError):
         queue.dequeue()
+
+
+test_primitives()
+test_array_implementation()
+test_array_implementation_empty_queue
+test_linked_list_implementation()
+test_linked_list_implementation_empty_queue()
