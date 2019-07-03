@@ -1,4 +1,4 @@
-from .linked_list import LinkedList
+from linked_list import LinkedList
 
 class StackEmptyError(Exception):
     pass
@@ -21,7 +21,7 @@ class ArrayBasedStack(BaseStack):
     def push(self, item):
         self._top = self._top + 1 if self._top is not None else 0
         self._container[self._top] = item
-    
+
     def pop(self):
         top = self._top
         if top is not None:
@@ -61,6 +61,6 @@ class Stack:
     
     def push(self, item):
         self._stack.push(item)
-    
-    def pip(self):
+
+    def pop(self):
         return self._stack.pop()
