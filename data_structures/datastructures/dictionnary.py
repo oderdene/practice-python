@@ -13,4 +13,27 @@ class BaseDictionnary:
         """
         raise NotImplementedError
 
-    
+    def insert(self, item: KeyedItem):
+        raise NotImplementedError
+
+    def delete(self, item: KeyedItem):
+        raise NotImplementedError
+
+    def max(self) -> KeyedItem:
+        """retrieve item with the largest key"""
+        raise NotImplementedError
+
+    def min(self) -> KeyedItem:
+        """retrieve item with the smallest key"""
+        raise NotImplementedError
+
+    def predecessor(self, item: KeyedItem) -> KeyedItem:
+        """retrieve the item whose key is immediately before"""
+        raise NotImplementedError
+
+    def successor(self, item: KeyedItem) -> KeyedItem:
+        """retrieve the item whose key is immediately after"""
+        raise NotImplementedError
+
+
+
