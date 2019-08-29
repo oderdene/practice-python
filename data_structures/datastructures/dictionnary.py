@@ -34,6 +34,3 @@ class BaseDictionnary:
     def successor(self, item: KeyedItem) -> KeyedItem:
         """retrieve the item whose key is immediately after"""
         raise NotImplementedError
-
-
-

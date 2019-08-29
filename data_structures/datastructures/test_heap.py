@@ -133,3 +133,16 @@ def test_delete_with_bubble_up():
     for i in range(11, 15):
         assert heap.extract_root() is items[i]
     assert heap.extract_root() is None
+
+
+test_insert_min_heap()
+test_construct_min_heap()
+test_insert_max_heap()
+test_construct_max_heap()
+test_construct_empty_heap()
+test_find_root()
+test_delete_root()
+test_delete_only_item()
+test_delete_last()
+test_delete_with_bubble_down()
+test_delete_with_bubble_up()
